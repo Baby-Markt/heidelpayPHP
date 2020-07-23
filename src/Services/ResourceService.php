@@ -39,6 +39,7 @@ use heidelpayPHP\Resources\Keypair;
 use heidelpayPHP\Resources\Metadata;
 use heidelpayPHP\Resources\Payment;
 use heidelpayPHP\Resources\PaymentTypes\Alipay;
+use heidelpayPHP\Resources\PaymentTypes\Bancontact;
 use heidelpayPHP\Resources\PaymentTypes\BasePaymentType;
 use heidelpayPHP\Resources\PaymentTypes\Card;
 use heidelpayPHP\Resources\PaymentTypes\EPS;
@@ -513,6 +514,9 @@ class ResourceService implements ResourceServiceInterface
     {
         $resourceType = IdService::getResourceTypeFromIdString($typeId);
         switch ($resourceType) {
+            case IdStrings::BANCONTACT:
+                $paymentType = new Bancontact();
+                break;
             case IdStrings::CARD:
                 $paymentType = new Card(null, null);
                 break;

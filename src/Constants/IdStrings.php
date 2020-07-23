@@ -52,6 +52,7 @@ class IdStrings
     const INVOICE_FACTORING = 'ivf';
     const HIRE_PURCHASE_DIRECT_DEBIT = 'hdd';
     const PAYMENT_PAGE = 'ppg';
+    const BANCONTACT = 'bct';
 
     // Resources
     const BASKET = 'bsk';
@@ -59,7 +60,7 @@ class IdStrings
     const PAYMENT = 'pay';
     const CUSTOMER = 'cst';
     const METADATA = 'mtd';
-    
+
     const PAYMENT_TYPES = [
         self::CARD,
         self::GIROPAY,
