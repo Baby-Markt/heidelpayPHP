@@ -41,6 +41,7 @@ use heidelpayPHP\Resources\Keypair;
 use heidelpayPHP\Resources\Metadata;
 use heidelpayPHP\Resources\Payment;
 use heidelpayPHP\Resources\PaymentTypes\Alipay;
+use heidelpayPHP\Resources\PaymentTypes\Bancontact;
 use heidelpayPHP\Resources\PaymentTypes\Card;
 use heidelpayPHP\Resources\PaymentTypes\EPS;
 use heidelpayPHP\Resources\PaymentTypes\HirePurchaseDirectDebit;
@@ -442,6 +443,7 @@ class AbstractHeidelpayResourceTest extends BasePaymentTest
             'Ideal' => [new Ideal(), 'parent/resource/path/types/ideal'],
             'EPS' => [new EPS(), 'parent/resource/path/types/eps'],
             'Alipay' => [new Alipay(), 'parent/resource/path/types/alipay'],
+            'Bancontact' => [new Bancontact(), 'parent/resource/path/types/bancontact'],
             'SepaDirectDebit' => [new SepaDirectDebit(''), 'parent/resource/path/types/sepa-direct-debit'],
             'SepaDirectDebitGuaranteed' => [new SepaDirectDebitGuaranteed(''), 'parent/resource/path/types/sepa-direct-debit-guaranteed'],
             'Invoice' => [new Invoice(), 'parent/resource/path/types/invoice'],

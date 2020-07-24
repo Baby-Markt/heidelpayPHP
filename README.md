@@ -34,6 +34,7 @@ Please refer to the following documentation for installation instructions and us
 *   WeChat Pay
 *   Invoice Factoring
 *   FlexiPay® Rate (Hire Purchase Direct Debit)
+*   Bancontact
 
 ## Supported features
 *   Webhooks and event handling
